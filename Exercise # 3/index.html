@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Card</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@400;500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* header css */
+        #header {
+            padding: 16px 40px;
+            background-color: rgb(245, 245, 245);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-heading {
+            cursor: pointer;
+        }
+
+        .header-heading:hover {
+            /* color: rgb(156, 165, 165); */
+            color: blueviolet;
+        }
+
+        .header-link {
+            list-style: none;
+            font-size: 16px;
+            color: rgb(76, 78, 78);
+            display: flex;
+            gap: 20px;
+        }
+
+        .header-link li:hover {
+            font-size: 18px;
+            color: blueviolet;
+            cursor: pointer;
+        }
+
+        /* main section */
+        main {
+            min-height: 90vh;
+            background: #f6f6f6;
+            padding-top: 24px;
+        }
+
+        .card {
+            border-radius: 11px;
+            margin: auto;
+            border: 2px solid #e2e2e2;
+            height: 440px;
+            width: 290px;
+            padding: 8px;
+            background-color: white;
+        }
+
+        .image {
+            background-image: url(./card.jpg);
+            background-size: cover;
+            /* border: 1px solid black; */
+            border-radius: 11px;
+            width: 290px;
+            height: 180px;
+        }
+
+        .button-div {
+            padding: 16px;
+        }
+
+        .button {
+            padding: 4px 12px;
+            border-radius: 50px;
+            color: #727272;
+            border: 1px solid #e2e2e2;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .content {
+            padding: 4px 12px;
+        }
+
+        .content h2 {
+            margin: 0px 0px 12px 0px;
+            color: #3e423d;
+        }
+
+        .content p {
+            color: #727272;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        .readmore {
+            padding: 20px 0px 0px 0px;
+            text-align: center;
+        }
+
+        .readmore a {
+            text-decoration: none;
+            font-size: 12px;
+            padding: 12px 18px;
+            border-radius: 50px;
+            background-color: rgb(226, 238, 249);
+            color: rgb(20, 140, 244);
+            font-weight: bold;
+        }
+
+        /* footer css */
+        .footer {
+            color: rgb(162, 168, 168);
+            padding: 20px 0;
+            text-align: center;
+            background-color: #f6f6f6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- our header section -->
+    <header id="header">
+        <h2 class="header-heading">Exercise # 3</h2>
+        <nav>
+            <ul class="header-link">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- our main section -->
+    <main>
+        <div class="card">
+            <div class="image"></div>
+            <div class="button-div">
+                <button class="button">Lecture</button>
+                <button class="button">Project</button>
+            </div>
+            <div class="content">
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat beatae, quos odio non recusandae
+                    enim dolorem laudantium suscipit?
+                </p>
+            </div>
+            <div class="readmore">
+                <a href="/" target="_blank">Read More</a>
+            </div>
+        </div>
+    </main>
+    <!-- our footer -->
+    <footer class="footer">
+        Copy right © 2023 | All right reserved.
+    </footer>
+
+</body>
+
+</html>
