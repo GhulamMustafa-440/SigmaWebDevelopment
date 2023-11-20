@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Website Layout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            padding: 12px 16px;
+            background-color: white;
+            box-shadow: 5px 1px 7px 1px #919497;
+            position: sticky;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h2 {
+            color: #919497;
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 0 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #919497;
+
+        }
+
+        ul li a:hover {
+            border-bottom: 2px solid black;
+        }
+
+        main {
+            padding: 30px 0;
+            background-color: black;
+            color: white;
+        }
+
+        .container {
+            width: 80vw;
+            margin: auto;
+            background: green;
+            text-align: center;
+            padding: 25px 0;
+
+        }
+
+        .box1 {
+            height: 60vh;
+            width: 45%;
+            background-color: palevioletred;
+            display: inline-block;
+            margin: 0px 16px;
+        }
+
+        .box2 {
+            height: 60vh;
+            width: 45%;
+            background-color: blue;
+            display: inline-block;
+            margin: 0px 16px;
+        }
+
+        .text-box {
+            margin: 50px 25vw;
+            padding: 34px;
+            border-radius: 18px;
+            font-size: 24px;
+            border: 2px solid white;
+        }
+
+        .orange-box {
+            height: 40px;
+            width: 40px;
+            background-color: orange;
+            border-radius: 100%;
+            position: fixed;
+            bottom: 16px;
+            right: 23px;
+        }
+
+        footer {
+            background-color: bisque;
+            text-align: center;
+            padding: 12px 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Exercise # 5</h2>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box1"> </div>
+            <div class="box2"> </div>
+        </div>
+
+        <div class="text-box">
+            <p>Welcome to Sigma Web Development Express.</p>
+        </div>
+
+        <div class="orange-box"></div>
+
+    </main>
+    <footer>
+        Copyright © 2023 | All right reserved.
+    </footer>
+</body>
+
+</html>

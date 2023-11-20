@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor Navbar</title>
+    <style>
+        :root {
+            --navBgColor: aliceblue;
+            --color: rgb(27, 135, 229);
+            --hoverColor: rgb(109, 187, 255);
+            --navShadow: #c3d5db;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            padding: 16px 18px;
+            background-color: var(--navBgColor);
+            box-shadow: 10px 3px 10px 0px var(--navShadow);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            color: var(--color);
+            list-style: none;
+            padding: 0 8px;
+        }
+
+        ul li:hover {
+            color: var(--hoverColor);
+            font-size: 17px;
+        }
+
+        h2:hover {
+            color: var(--hoverColor);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Exercise # 4</h2>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

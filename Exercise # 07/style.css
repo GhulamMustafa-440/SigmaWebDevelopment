@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul {
+    display: flex;
+    gap: 34px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: flex-end;
+}
+
+ul li a svg {
+    padding: 0 5px;
+}
+
+
+.container {
+    width: 70vw;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 26px;
+    column-gap: 30px;
+
+}
+
+.item {
+    background-color: #f9f9f9;
+    padding: 20px
+}
+
+h3 {
+    font-weight: 700;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+span {
+    font-size: 12px;
+    display: block;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.link-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link1 {
+    background-color: #00B6D1;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link1:hover {
+    background-color: #02a1b9;
+}
+
+.link2 {
+    background-color: #5CB85C;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link2:hover {
+    background-color: #7fc37f;
+}
+
+.link-box a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+[data-hidden="hidden"] {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 1360px) {
+    .container {
+        min-width: 75vw;
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    .container {
+        min-width: 90vw;
+
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .link-box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .link1 {
+        width: 150px;
+    }
+
+    .link2 {
+        width: 150px;
+    }
+
+    a {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .link-box {
+        flex-direction: row;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    a {
+        font-size: 12px;
+    }
+
+    .link1 {
+        width: 125px;
+    }
+
+    .link2 {
+        width: 125px;
+    }
+
+}
+
+@media only screen and (max-width: 335px) {
+    .link-box {
+        flex-direction: column;
+    }
+}
