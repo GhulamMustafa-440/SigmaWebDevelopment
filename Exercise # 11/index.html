@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+
+<body>
+    <script>
+        let number = prompt("Enter a number");
+        number = Number.parseInt(number);
+
+        // Method 1 Using forLoop
+        let factorial_1 = 1;
+        for (let i = 1; i <= number; i++) {
+            factorial_1 *= i;
+        };
+        console.log(`The factorial of ${number} is ${factorial_1}`);
+
+        // Method 2 Using reduce
+        let numberArr = [];
+        for (let i = 1; i <= number; i++) {
+            numberArr.unshift(i);
+        };
+        let factorial_2 = numberArr.reduce((val1, val2) => val1 * val2);
+        console.log(`The factorial of ${number} is ${factorial_2}`);
+
+    </script>
+</body>
+
+</html>
